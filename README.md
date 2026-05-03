@@ -29,6 +29,12 @@ Mode 6 — Hold: All switches off; capacitors hold their voltages until the next
 | `Negative pulse width` | 5 µs |
 
 
+### Component Sizing Summary
+
+- Capacitors — sized to keep the voltage droop below 5% during each pulse, balancing pulse quality against the inductor discharge timing budget.
+- Inductor — sized via cycle-by-cycle energy balance (E_in = E_out) and verified against the discontinuous conduction mode (DCM) constraint to ensure the current returns to zero each cycle.
+- Stage count — two stages selected for the lowest component count (10 switches), lowest total capacitance, and proven experimental validation in the source literature.
+
 ## Simulation Results
 
 The LTspice simulation confirmed:
