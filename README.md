@@ -20,11 +20,22 @@ Mode 6 — Hold: All switches off; capacitors hold their voltages until the next
 | --- | --- |
 | `Input voltage` | 12.5 V |
 | `Target outputs` | ±150 V ; ±20 A |
-| `Capacitors` | (×2)56 µF (890764429002CS) |
+| `Capacitors (×2)` | 56 µF (890764429002CS) |
 | `Inductor` | 27 µH (AGP4233-153) |
 | `Diode` | VS-E5PH6012 |
 | `Load resistance` | 7.5 Ω |
 | `Switching period` | 150 µs (6.667 kHz) |
 | `Positive pulse width` | 10 µs |
 | `Negative pulse width` | 5 µs |
+
+
+## Simulation Results
+
+The LTspice simulation confirmed:
+
+- ✅ Correct six-mode bipolar switching sequence
+- ✅ Voltage droop of ≈ 4.08% (within the 5% design ceiling)
+- ✅ Clean zero-voltage intervals during dead times
+- ⚠️ Steady-state output reached ≈ 34 V / 4.5 A — roughly 4.4× below the design targets, indicating incomplete energy balance between inductor charging and capacitor discharge
+- ❌ Resistive–capacitive load simulation exhibited severe oscillations due to resonant interaction with the stage capacitors
 
