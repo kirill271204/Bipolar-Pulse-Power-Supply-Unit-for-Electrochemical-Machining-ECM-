@@ -1,2 +1,2 @@
 # Bipolar-Pulse-Power-Supply-Unit-for-Electrochemical-Machining-ECM-
-This project provides the design of a bipolar pulsed power supply for ECM. The aim is creating bipolar square-wave operation ( ±150 V and ±20 A) with short pulse widths. A product was designed and evaluated in LTspice using a time-domain model with ideal switching devices. The study provides a simulation framework for hardware development.
+This project provides the design of a bipolar pulsed power supply for ECM. The aim is creating bipolar square-wave operation ( ±150 V and ±20 A) with short pulse widths. The design was evaluated in LTspice using a time-domain model with ideal switching devices. The study provides a simulation framework for hardware development.
