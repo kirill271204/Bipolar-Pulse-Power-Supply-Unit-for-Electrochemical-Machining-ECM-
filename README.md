@@ -6,10 +6,11 @@ This project presents the design and simulation of a two-stage bipolar high-volt
 ### Operating Principle
 The BHVPPS operates through six switching modes per cycle to produce a complete bipolar pulse:
 (+V) → (0 V) → (−V) → (0 V) → (+V) → ...
-
+```
 Mode 1 — Positive pulse delivery: Boost switch S_B and all positive switches S_Pi are on. The inductor charges from the input while the series-connected capacitors deliver a positive voltage pulse across the load.
 Mode 2 — Dead time: Only S_B conducts. The inductor continues charging; capacitors hold their voltage; the load sees zero volts.
 Mode 3 — Negative pulse delivery: Mirrors Mode 1 with reversed polarity via the negative switches S_Ni.
 Mode 4 — Dead time: Same as Mode 2.
 Mode 5 — Capacitor recharge: S_B turns off and the charging switches S_Ci turn on. The inductor's stored energy is transferred to the stage capacitors, which are connected in parallel and charged equally.
 Mode 6 — Hold: All switches off; capacitors hold their voltages until the next cycle begins.
+```
