@@ -35,6 +35,7 @@ Mode 6 — Hold: All switches off; capacitors hold their voltages until the next
 - Inductor — sized via cycle-by-cycle energy balance (E_in = E_out) and verified against the discontinuous conduction mode (DCM) constraint to ensure the current returns to zero each cycle.
 - Stage count — two stages selected for the lowest component count (10 switches), lowest total capacitance, and proven experimental validation in the source literature.
 
+
 ## Simulation Results
 
 The LTspice simulation confirmed:
@@ -44,4 +45,11 @@ The LTspice simulation confirmed:
 - ✅ Clean zero-voltage intervals during dead times
 - ⚠️ Steady-state output reached ≈ 34 V / 4.5 A — roughly 4.4× below the design targets, indicating incomplete energy balance between inductor charging and capacitor discharge
 - ❌ Resistive–capacitive load simulation exhibited severe oscillations due to resonant interaction with the stage capacitors
+
+
+## Tools Used
+
+LTspice — circuit simulation
+LaTeX / Overleaf — dissertation typesetting
+MATLAB (supplementary calculations)
 
