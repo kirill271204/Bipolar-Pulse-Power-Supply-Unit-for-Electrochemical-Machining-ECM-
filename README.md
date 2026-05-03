@@ -49,7 +49,7 @@ The LTspice simulation confirmed:
 
 ## Tools Used
 
-LTspice — circuit simulation
-LaTeX / Overleaf — dissertation typesetting
-MATLAB (supplementary calculations)
+- LTspice — circuit simulation
+- LaTeX / Overleaf — dissertation typesetting
+- MATLAB (supplementary calculations)
 
